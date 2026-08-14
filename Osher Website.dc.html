@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Osher — Personalized 3D Printed Figurines for Kids | Where Little Joys Inspire Big Dreams</title>
+<meta name="description" content="Osher turns your child's photos into handcrafted, professionally 3D printed and individually hand-painted collectible figurines. Superheroes, princesses, cricketers, fantasy and custom characters. Delivered across India." />
+<meta name="keywords" content="personalized figurines for kids, custom 3D figurines India, kids photo figurines, personalized gifts for children, custom superhero figurines, 3D printed figurines India, hand painted figurines" />
+<meta property="og:title" content="Osher — Turn Your Child's Imagination Into a Treasure They Keep Forever" />
+<meta property="og:description" content="Custom-designed, professionally 3D printed and hand-painted figurines inspired by your child's dreams." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="img/logo.jpg" />
+<meta name="ext-resource-dependency" content="img/step1.png" />
+<meta name="ext-resource-dependency" content="img/step2.png" />
+<meta name="ext-resource-dependency" content="img/step3.png" />
+<meta name="ext-resource-dependency" content="img/step4.png" />
+<meta name="ext-resource-dependency" content="img/before.png" />
+<meta name="ext-resource-dependency" content="img/after.png" />
+<meta name="ext-resource-dependency" content="img/fig-cricketer.png" />
+<meta name="ext-resource-dependency" content="img/fig-blue.png" />
+<meta name="ext-resource-dependency" content="img/fig-pink.png" />
+<meta name="ext-resource-dependency" content="img/fig-space.png" />
+<meta name="ext-resource-dependency" content="img/fig-custom.png" />
+<meta name="ext-resource-dependency" content="img/reaction1.png" />
+<meta name="ext-resource-dependency" content="img/reaction2.png" />
+<meta name="ext-resource-dependency" content="img/reaction3.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Osher","slogan":"Where Little Joys Inspire Big Dreams.","description":"Personalized handcrafted 3D printed and hand-painted collectible figurines made from your child's photos.","telephone":"+91 6300053973","areaServed":"IN","priceRange":"$$$"}
+</script>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#120A2E;color:#F7F3EB;font-family:Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#D4AF37;text-decoration:none}
+  a:hover{color:#F0D68A}
+  input,textarea,select,button{font-family:inherit}
+  ::selection{background:#D4AF37;color:#120A2E}
+  @keyframes oTwinkle{0%,100%{opacity:.25}50%{opacity:.9}}
+  @keyframes oFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  @keyframes oRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes oGlow{0%,100%{box-shadow:0 0 40px rgba(212,175,55,.14)}50%{box-shadow:0 0 70px rgba(212,175,55,.3)}}
+  @media (max-width:960px){
+    [style*="repeat(4,1fr)"]{grid-template-columns:repeat(2,1fr)!important}
+    [style*="repeat(3,1fr)"]{grid-template-columns:repeat(2,1fr)!important}
+    [style*="1.05fr .95fr"],[style*="1.4fr 1fr 1fr"]{grid-template-columns:1fr!important}
+    h1{font-size:38px!important;line-height:1.15!important}
+    h2{font-size:30px!important}
+  }
+  @media (max-width:640px){
+    [style*="repeat(4,1fr)"],[style*="repeat(3,1fr)"],[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+    header > div{flex-wrap:wrap!important;justify-content:center!important}
+    header nav{order:3;width:100%;justify-content:flex-start!important;overflow-x:auto;flex-wrap:nowrap!important}
+  }
+</style>
+</helmet>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#120A2E"/><circle cx="50" cy="50" r="22" fill="none" stroke="#D4AF37" stroke-width="4"/><circle cx="50" cy="26" r="3" fill="#D4AF37"/><circle cx="76" cy="70" r="2" fill="#D4AF37"/><circle cx="24" cy="72" r="2" fill="#D4AF37"/></svg></template>
+
+<div style="position:relative;min-height:100vh;overflow-x:hidden;background:radial-gradient(1200px 700px at 78% -8%,rgba(36,18,77,.95),transparent 60%),radial-gradient(900px 600px at 8% 12%,rgba(212,175,55,.07),transparent 60%),#120A2E">
+
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(1.6px 1.6px at 12% 18%,rgba(247,243,235,.7),transparent),radial-gradient(1.4px 1.4px at 32% 62%,rgba(212,175,55,.8),transparent),radial-gradient(1.2px 1.2px at 58% 24%,rgba(247,243,235,.6),transparent),radial-gradient(1.8px 1.8px at 74% 71%,rgba(212,175,55,.7),transparent),radial-gradient(1.2px 1.2px at 88% 34%,rgba(247,243,235,.55),transparent),radial-gradient(1.4px 1.4px at 46% 88%,rgba(212,175,55,.6),transparent),radial-gradient(1.2px 1.2px at 22% 82%,rgba(247,243,235,.5),transparent),radial-gradient(1.6px 1.6px at 66% 46%,rgba(212,175,55,.5),transparent);animation:oTwinkle 6s ease-in-out infinite"></div>
+
+  <header style="position:sticky;top:0;z-index:40;background:rgba(18,10,46,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,175,55,.2)">
+    <div style="max-width:1240px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+      <div onClick="{{ goHome }}" style="display:flex;align-items:center;gap:12px;cursor:pointer;flex-shrink:0">
+        <img src="img/logo.png" alt="Osher" style="height:104px;width:auto;display:block" />
+      </div>
+      <nav style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;justify-content:center">
+        <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="8">
+          <div onClick="{{ item.onClick }}" style="position:relative;padding:8px 12px;cursor:pointer;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:rgba(247,243,235,.72)" style-hover="color:#F0D68A">
+            {{ item.label }}
+            <sc-if value="{{ item.active }}" hint-placeholder-val="{{ true }}">
+              <div style="position:absolute;left:12px;right:12px;bottom:2px;height:1px;background:linear-gradient(90deg,transparent,#D4AF37,transparent)"></div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </nav>
+      <div onClick="{{ goOrder }}" style="flex-shrink:0;cursor:pointer;padding:11px 20px;border-radius:999px;background:linear-gradient(135deg,#F0D68A,#D4AF37);color:#120A2E;font-weight:600;font-size:13px;letter-spacing:.04em;white-space:nowrap;box-shadow:0 8px 24px rgba(212,175,55,.24)" style-hover="box-shadow:0 10px 30px rgba(212,175,55,.45)">Create My Child's Figurine</div>
+    </div>
+  </header>
+
+  <main style="position:relative;z-index:1">
+
+  <!-- ══════════ HOME ══════════ -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div>
+    <section style="max-width:1280px;margin:0 auto;padding:72px 24px 64px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:stretch;min-height:calc(100vh - 200px)">
+      <div style="position:relative;animation:oRise .8s ease both;min-height:560px">
+        <div style="position:absolute;inset:-30px;border-radius:26px;background:radial-gradient(circle at 50% 45%,rgba(212,175,55,.22),transparent 68%);filter:blur(24px)"></div>
+        <div style="position:relative;height:100%;border-radius:22px;overflow:hidden;border:1px solid rgba(212,175,55,.3);box-shadow:0 40px 90px rgba(0,0,0,.5)">
+          <img src="img/hero-bg.png" alt="Children dressed as their favourite characters" style="width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block" />
+        </div>
+      </div>
+      <div style="animation:oRise .9s ease both;display:flex;flex-direction:column;justify-content:center">
+        <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:26px">
+          <div style="width:42px;height:1px;background:#D4AF37"></div>
+          <div style="font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:#D4AF37;font-weight:500">Where Little Joys Inspire Big Dreams</div>
+        </div>
+        <h1 style="font-family:Marcellus,serif;font-size:42px;line-height:1.2;margin:0 0 26px;color:#FFFFFF;text-wrap:balance">The hero, the princess, the dreamer they are right now — <span style="font-style:italic;color:#F0D68A">kept forever.</span></h1>
+        <p style="font-size:20px;line-height:1.65;color:rgba(247,243,235,.78);margin:0 0 40px;max-width:520px;font-weight:300">Custom-designed, professionally 3D printed and hand-painted figurines inspired by your child's dreams.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <div onClick="{{ goOrder }}" style="cursor:pointer;padding:18px 34px;border-radius:999px;background:linear-gradient(135deg,#F0D68A,#D4AF37);color:#120A2E;font-weight:600;letter-spacing:.03em;animation:oGlow 4s ease-in-out infinite">Create My Child's Figurine</div>
+          <div onClick="{{ goGallery }}" style="cursor:pointer;padding:18px 34px;border-radius:999px;border:1px solid rgba(212,175,55,.5);color:#F0D68A;letter-spacing:.03em" style-hover="background:rgba(212,175,55,.1)">View Our Work</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-block:1px solid rgba(212,175,55,.16);background:rgba(36,18,77,.35)">
+      <div style="max-width:1240px;margin:0 auto;padding:22px 24px;display:flex;gap:40px;flex-wrap:wrap;justify-content:center;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,235,.55)">
+        <div>Personalized 3D Printed</div><div style="color:#D4AF37">◆</div><div>Hand Painted</div><div style="color:#D4AF37">◆</div><div>Made With Love</div><div style="color:#D4AF37">◆</div><div>Design Approved By You</div>
+      </div>
+    </section>
+
+    <section style="max-width:1240px;margin:0 auto;padding:100px 24px 0">
+      <div style="text-align:center;margin-bottom:56px">
+        <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:20px">
+          <div style="width:36px;height:1px;background:rgba(212,175,55,.6)"></div>
+          <div style="font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#D4AF37;font-weight:500">What We Offer</div>
+          <div style="width:36px;height:1px;background:rgba(212,175,55,.6)"></div>
+        </div>
+        <h2 style="font-family:Marcellus,serif;font-size:50px;line-height:1.12;margin:0;color:#F7F3EB">Our <span style="font-style:italic;color:#F0D68A">services</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <sc-for list="{{ servicesPreview }}" as="s" hint-placeholder-count="3">
+          <div onClick="{{ s.onClick }}" style="cursor:pointer;position:relative;padding:38px 30px 32px;border-radius:18px;border:1px solid rgba(212,175,55,.22);background:linear-gradient(165deg,rgba(46,24,92,.6),rgba(18,10,46,.5));overflow:hidden;box-shadow:inset 0 1px 0 rgba(247,243,235,.05),0 0 34px rgba(212,175,55,.08);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease" style-hover="border-color:rgba(240,214,138,.7);transform:translateY(-6px);box-shadow:inset 0 1px 0 rgba(247,243,235,.08),0 0 60px rgba(212,175,55,.28)">
+            <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.18),transparent 70%);pointer-events:none"></div>
+            <div style="position:relative;margin-bottom:20px;color:#F0D68A;font-size:20px;filter:drop-shadow(0 0 8px rgba(240,214,138,.7))">✦</div>
+            <div style="font-family:Marcellus,serif;font-size:22px;margin-bottom:12px;color:#F7F3EB;text-wrap:balance">{{ s.title }}</div>
+            <div style="font-size:14.5px;line-height:1.7;color:rgba(247,243,235,.62);font-weight:300">{{ s.body }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="text-align:center;margin-top:40px">
+        <div onClick="{{ goServices }}" style="display:inline-block;cursor:pointer;color:#D4AF37;font-size:14px;letter-spacing:.08em;border-bottom:1px solid rgba(212,175,55,.4);padding-bottom:4px">View all services →</div>
+      </div>
+    </section>
+
+    <section style="max-width:1240px;margin:0 auto;padding:100px 24px">
+      <div style="text-align:center;margin-bottom:64px">
+        <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:20px">
+          <div style="width:36px;height:1px;background:rgba(212,175,55,.6)"></div>
+          <div style="font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#D4AF37;font-weight:500">Why Parents Love Osher</div>
+          <div style="width:36px;height:1px;background:rgba(212,175,55,.6)"></div>
+        </div>
+        <h2 style="font-family:Marcellus,serif;font-size:50px;line-height:1.12;margin:0;color:#F7F3EB">A treasure, <span style="font-style:italic;color:#F0D68A">not a toy.</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+        <sc-for list="{{ whyCards }}" as="c" hint-placeholder-count="8">
+          <div style="position:relative;padding:38px 28px 32px;border-radius:18px;border:1px solid rgba(212,175,55,.22);background:linear-gradient(165deg,rgba(46,24,92,.6),rgba(18,10,46,.5));overflow:hidden;box-shadow:inset 0 1px 0 rgba(247,243,235,.05),0 0 34px rgba(212,175,55,.08);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease" style-hover="border-color:rgba(240,214,138,.7);transform:translateY(-6px);box-shadow:inset 0 1px 0 rgba(247,243,235,.08),0 0 60px rgba(212,175,55,.28)">
+            <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.18),transparent 70%);pointer-events:none"></div>
+            <div style="position:relative;width:40px;height:40px;margin-bottom:22px;display:flex;align-items:center;justify-content:center;color:#F0D68A;font-size:20px;filter:drop-shadow(0 0 8px rgba(240,214,138,.7))">✦</div>
+            <div style="font-family:Marcellus,serif;font-size:20px;margin-bottom:10px;color:#F7F3EB;text-wrap:balance">{{ c.title }}</div>
+            <div style="font-size:14px;line-height:1.65;color:rgba(247,243,235,.6);font-weight:300">{{ c.note }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="background:rgba(36,18,77,.4);border-block:1px solid rgba(212,175,55,.16)">
+      <div style="max-width:1240px;margin:0 auto;padding:96px 24px">
+        <div style="text-align:center;margin-bottom:56px">
+          <div style="font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#D4AF37;margin-bottom:14px">Our process</div>
+          <h2 style="font-family:Marcellus,serif;font-size:44px;margin:0">Four steps from photo to figurine</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+          <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+            <div onClick="{{ s.onClick }}" style="cursor:pointer;padding:32px 26px;border-radius:16px;border:1px solid rgba(212,175,55,.22);background:rgba(18,10,46,.7)" style-hover="border-color:rgba(212,175,55,.6)">
+              <div style="font-family:Marcellus,serif;font-size:46px;line-height:1;color:rgba(212,175,55,.35);margin-bottom:16px">{{ s.n }}</div>
+              <div style="font-family:Marcellus,serif;font-size:21px;margin-bottom:10px">{{ s.title }}</div>
+              <div style="font-size:14px;line-height:1.65;color:rgba(247,243,235,.58);font-weight:300">{{ s.body }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:rgba(36,18,77,.4);border-block:1px solid rgba(212,175,55,.16)">
+      <div style="max-width:1240px;margin:0 auto;padding:96px 24px">
+        <div style="text-align:center;margin-bottom:56px">
+          <div style="font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#D4AF37;margin-bottom:14px">Real smiles. Real reactions.</div>
+          <h2 style="font-family:Marcellus,serif;font-size:44px;margin:0">What parents tell us</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+          <sc-for list="{{ featuredReviews }}" as="r" hint-placeholder-count="3">
+            <div style="padding:32px 28px;border-radius:16px;border:1px solid rgba(212,175,55,.2);background:rgba(18,10,46,.75)">
+              <div style="color:#D4AF37;letter-spacing:.2em;margin-bottom:16px">{{ r.stars }}</div>
+              <div style="font-size:16px;line-height:1.7;color:rgba(247,243,235,.82);font-weight:300;margin-bottom:22px">{{ r.quote }}</div>
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:40px;height:40px;border-radius:50%;flex-shrink:0;border:1px solid rgba(212,175,55,.4);background:rgba(212,175,55,.1);display:flex;align-items:center;justify-content:center;font-family:Marcellus,serif;font-size:14px;letter-spacing:.06em;color:#F0D68A">{{ r.initials }}</div>
+                <div>
+                  <div style="font-size:14.5px">{{ r.name }}</div>
+                  <div style="font-size:12.5px;color:rgba(247,243,235,.45)">{{ r.city }}</div>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:1000px;margin:0 auto;padding:110px 24px;text-align:center">
+      <h2 style="font-family:Marcellus,serif;font-size:52px;line-height:1.15;margin:0 0 20px;background:linear-gradient(120deg,#FFFFFF,#F0D68A 60%,#D4AF37);-webkit-background-clip:text;background-clip:text;color:transparent">Your child dreams it. We bring it to life.</h2>
+      <p style="font-size:18px;color:rgba(247,243,235,.65);font-weight:300;margin:0 0 36px">Share a photo today and see the design before anything is printed.</p>
+      <div onClick="{{ goOrder }}" style="display:inline-block;cursor:pointer;padding:17px 36px;border-radius:999px;background:linear-gradient(135deg,#F0D68A,#D4AF37);color:#120A2E;font-weight:600">Create My Child's Figurine</div>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ══════════ SERVICES ══════════ -->
+  <sc-if value="{{ isServices }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1240px;margin:0 auto;padding:80px 24px 110px">
+    <div style="text-align:center;margin-bottom:64px">
+      <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:20px">
+        <div style="width:36px;height:1px;background:rgba(212,175,55,.6)"></div>
+        <div style="font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#D4AF37;font-weight:500">What We Offer</div>
+        <div style="width:36px;height:1px;background:rgba(212,175,55,.6)"></div>
+      </div>
+      <h1 style="font-family:Marcellus,serif;font-size:52px;line-height:1.12;margin:0 0 18px">Our <span style="font-style:italic;color:#F0D68A">services</span></h1>
+      <p style="font-size:17px;color:rgba(247,243,235,.6);font-weight:300;max-width:620px;margin:0 auto">From a single figurine to a full family set, every piece is designed, printed and painted to order.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+      <sc-for list="{{ services }}" as="s" hint-placeholder-count="6">
+        <div style="position:relative;padding:40px 30px 34px;border-radius:18px;border:1px solid rgba(212,175,55,.22);background:linear-gradient(165deg,rgba(46,24,92,.6),rgba(18,10,46,.5));overflow:hidden;box-shadow:inset 0 1px 0 rgba(247,243,235,.05),0 0 34px rgba(212,175,55,.08);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease" style-hover="border-color:rgba(240,214,138,.7);transform:translateY(-6px);box-shadow:inset 0 1px 0 rgba(247,243,235,.08),0 0 60px rgba(212,175,55,.28)">
+          <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.18),transparent 70%);pointer-events:none"></div>
+          <div style="position:relative;margin-bottom:20px;color:#F0D68A;font-size:20px;filter:drop-shadow(0 0 8px rgba(240,214,138,.7))">✦</div>
+          <div style="font-family:Marcellus,serif;font-size:23px;margin-bottom:12px;color:#F7F3EB;text-wrap:balance">{{ s.title }}</div>
+          <div style="font-size:14.5px;line-height:1.7;color:rgba(247,243,235,.62);font-weight:300;margin-bottom:22px">{{ s.body }}</div>
+          <div style="display:flex;flex-direction:column;gap:9px;padding-top:20px;border-top:1px solid rgba(212,175,55,.16)">
+            <sc-for list="{{ s.points }}" as="p" hint-placeholder-count="3">
+              <div style="display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:rgba(247,243,235,.55);font-weight:300">
+                <span style="color:#D4AF37;flex-shrink:0">·</span>
+                <span>{{ p }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="text-align:center;margin-top:70px">
+      <div onClick="{{ goOrder }}" style="display:inline-block;cursor:pointer;padding:17px 36px;border-radius:999px;background:linear-gradient(135deg,#F0D68A,#D4AF37);color:#120A2E;font-weight:600">Create My Child's Figurine</div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ══════════ PROCESS ══════════ -->
+  <sc-if value="{{ isProcess }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1240px;margin:0 auto;padding:80px 24px 110px">
+    <div style="text-align:center;margin-bottom:60px">
+      <div style="font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#D4AF37;margin-bottom:14px">Our process</div>
+      <h1 style="font-family:Marcellus,serif;font-size:52px;margin:0 0 16px">How your figurine is made</h1>
+      <p style="font-size:17px;color:rgba(247,243,235,.6);font-weight:300;max-width:620px;margin:0 auto">Nothing is printed until you approve the design. Follow the four stages below.</p>
+    </div>
+
+    <div style="display:flex;gap:8px;align-items:center;margin-bottom:44px">
+      <sc-for list="{{ stepBars }}" as="b" hint-placeholder-count="4">
+        <div onClick="{{ b.onClick }}" style="flex:1;cursor:pointer">
+          <div style="height:3px;border-radius:2px;background:{{ b.fill }}"></div>
+          <div style="margin-top:12px;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:{{ b.color }}">{{ b.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;padding:44px;border-radius:22px;border:1px solid rgba(212,175,55,.25);background:linear-gradient(160deg,rgba(36,18,77,.8),rgba(18,10,46,.8))">
+      <div>
+        <div style="font-family:Marcellus,serif;font-size:60px;color:rgba(212,175,55,.32);line-height:1">{{ active.n }}</div>
+        <h2 style="font-family:Marcellus,serif;font-size:36px;margin:8px 0 18px">{{ active.title }}</h2>
+        <p style="font-size:17px;line-height:1.75;color:rgba(247,243,235,.7);font-weight:300">{{ active.long }}</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:26px">
+          <sc-for list="{{ active.tags }}" as="tag" hint-placeholder-count="4">
+            <div style="padding:8px 16px;border-radius:999px;border:1px solid rgba(212,175,55,.35);font-size:13px;color:#F0D68A">{{ tag }}</div>
+          </sc-for>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:34px">
+          <div onClick="{{ prevStep }}" style="cursor:pointer;padding:12px 22px;border-radius:999px;border:1px solid rgba(212,175,55,.35);color:#F0D68A;font-size:14px">← Back</div>
+          <div onClick="{{ nextStep }}" style="cursor:pointer;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,#F0D68A,#D4AF37);color:#120A2E;font-weight:600;font-size:14px">Next step →</div>
+        </div>
+      </div>
+      <div style="aspect-ratio:1/1;border-radius:18px;border:1px solid rgba(212,175,55,.28);background:#F7F3EB;overflow:hidden">
+        <img src="{{ active.img }}" alt="{{ active.title }}" style="width:100%;height:100%;object-fit:contain;display:block" />
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:70px">
+      <div onClick="{{ goOrder }}" style="display:inline-block;cursor:pointer;padding:16px 34px;border-radius:999px;background:linear-gradient(135deg,#F0D68A,#D4AF37);color:#120A2E;font-weight:600">Create My Child's Figurine</div>
+    </div>
+  </div>
+  </sc-if>
+
+
+  <!-- ══════════ GALLERY ══════════ -->
+  <sc-if value="{{ isGallery }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1240px;margin:0 auto;padding:80px 24px 110px">
+    <div style="text-align:center;margin-bottom:44px">
+      <div style="font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#D4AF37;margin-bottom:14px">Gallery</div>
+      <h1 style="font-family:Marcellus,serif;font-size:52px;margin:0">From photograph to figurine</h1>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+      <sc-for list="{{ visibleGallery }}" as="g" hint-placeholder-count="6">
+        <div onClick="{{ g.onClick }}" style="cursor:pointer;border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.22);background:#1B0F3B" style-hover="border-color:rgba(212,175,55,.6)">
+          <div style="aspect-ratio:3/4;overflow:hidden;background:radial-gradient(circle at 50% 40%,rgba(212,175,55,.1),rgba(18,10,46,.9))">
+            <img src="{{ g.img }}" alt="{{ g.title }}" style="width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <div style="padding:18px 22px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div style="font-family:Marcellus,serif;font-size:18px">{{ g.title }}</div>
+            <div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(212,175,55,.75)">Zoom ⤢</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <sc-if value="{{ isTestimonials }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1240px;margin:0 auto;padding:80px 24px 110px">
+    <div style="text-align:center;margin-bottom:56px">
+      <div style="font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#D4AF37;margin-bottom:14px">Testimonials</div>
+      <h1 style="font-family:Marcellus,serif;font-size:52px;margin:0 0 16px">Real smiles. Real reactions.</h1>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="6">
+        <div style="padding:32px 28px;border-radius:18px;border:1px solid rgba(212,175,55,.2);background:linear-gradient(160deg,rgba(36,18,77,.8),rgba(18,10,46,.8))">
+          <div style="color:#D4AF37;letter-spacing:.2em;margin-bottom:16px">{{ r.stars }}</div>
+          <div style="font-size:16px;line-height:1.7;color:rgba(247,243,235,.82);font-weight:300;margin-bottom:24px">{{ r.quote }}</div>
+          <div style="display:flex;align-items:center;gap:12px;padding-top:20px;border-top:1px solid rgba(212,175,55,.16)">
+            <div style="width:44px;height:44px;border-radius:50%;flex-shrink:0;border:1px solid rgba(212,175,55,.4);background:rgba(212,175,55,.1);display:flex;align-items:center;justify-content:center;font-family:Marcellus,serif;font-size:15px;letter-spacing:.06em;color:#F0D68A">{{ r.initials }}</div>
+            <div>
+              <div style="font-size:14.5px">{{ r.name }}</div>
+              <div style="font-size:12.5px;color:rgba(247,243,235,.45)">{{ r.city }}</div>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ true }}">
+  <div>
+    <div style="max-width:1240px;margin:0 auto;padding:80px 24px 0">
+      <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:start">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:22px">
+            <div style="width:42px;height:1px;background:#D4AF37"></div>
+            <div style="font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#D4AF37;font-weight:500">About Osher</div>
+          </div>
+          <h1 style="font-family:Marcellus,serif;font-size:46px;line-height:1.16;margin:0 0 28px;text-wrap:balance">Where little joys <span style="font-style:italic;color:#F0D68A">inspire big dreams.</span></h1>
+          <p style="font-size:17.5px;line-height:1.85;color:rgba(247,243,235,.72);font-weight:300;margin:0 0 20px">Osher began with a simple observation: children spend their days becoming someone else. A cape at breakfast, a crown by afternoon, a cricketer before bed. Those years pass quickly, and photographs only capture part of them.</p>
+          <p style="font-size:17.5px;line-height:1.85;color:rgba(247,243,235,.72);font-weight:300;margin:0 0 20px">We make something you can hold. Every figurine starts from your child's own photographs, is sculpted into a 3D model by our designers, printed in fine detail, and then painted by hand — one brush, one figure at a time.</p>
+          <p style="font-family:Marcellus,serif;font-size:22px;line-height:1.5;color:#F0D68A;font-style:italic;margin:32px 0 0;padding-left:22px;border-left:2px solid rgba(212,175,55,.5)">Every childhood has a chapter like this one. We make sure it doesn't disappear.</p>
+        </div>
+        <div style="position:relative;margin-top:56px">
+          <div style="position:absolute;inset:-28px;border-radius:26px;background:radial-gradient(circle at 50% 45%,rgba(212,175,55,.2),transparent 68%);filter:blur(24px)"></div>
+          <div style="position:relative;border-radius:22px;overflow:hidden;border:1px solid rgba(212,175,55,.3);background:radial-gradient(circle at 50% 40%,rgba(212,175,55,.1),rgba(18,10,46,.95));box-shadow:0 40px 90px rgba(0,0,0,.5)">
+            <img src="img/about-boy.png" alt="A child imagining himself as a superhero" style="width:100%;display:block" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:1240px;margin:0 auto;padding:80px 24px 0">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:44px 0;border-block:1px solid rgba(212,175,55,.18)">
+        <sc-for list="{{ aboutStats }}" as="st" hint-placeholder-count="3">
+          <div style="text-align:center">
+            <div style="font-family:Marcellus,serif;font-size:40px;color:#F0D68A;line-height:1;margin-bottom:12px">{{ st.figure }}</div>
+            <div style="font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,243,235,.5)">{{ st.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="max-width:1240px;margin:0 auto;padding:80px 24px 110px">
+      <div style="text-align:center;margin-bottom:56px">
+        <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:20px">
+          <div style="width:36px;height:1px;background:rgba(212,175,55,.6)"></div>
+          <div style="font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#D4AF37;font-weight:500">What We Stand For</div>
+          <div style="width:36px;height:1px;background:rgba(212,175,55,.6)"></div>
+        </div>
+        <h2 style="font-family:Marcellus,serif;font-size:44px;margin:0">Our <span style="font-style:italic;color:#F0D68A">values</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+        <sc-for list="{{ values }}" as="v" hint-placeholder-count="4">
+          <div style="position:relative;padding:38px 28px 32px;border-radius:18px;border:1px solid rgba(212,175,55,.22);background:linear-gradient(165deg,rgba(46,24,92,.6),rgba(18,10,46,.5));overflow:hidden;box-shadow:inset 0 1px 0 rgba(247,243,235,.05),0 0 34px rgba(212,175,55,.08);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease" style-hover="border-color:rgba(240,214,138,.7);transform:translateY(-6px);box-shadow:inset 0 1px 0 rgba(247,243,235,.08),0 0 60px rgba(212,175,55,.28)">
+            <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.18),transparent 70%);pointer-events:none"></div>
+            <div style="position:relative;margin-bottom:20px;color:#F0D68A;font-size:20px;filter:drop-shadow(0 0 8px rgba(240,214,138,.7))">✦</div>
+            <div style="font-family:Marcellus,serif;font-size:20px;margin-bottom:10px;text-wrap:balance">{{ v.title }}</div>
+            <div style="font-size:14px;line-height:1.7;color:rgba(247,243,235,.6);font-weight:300">{{ v.body }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="text-align:center;margin-top:70px">
+        <div onClick="{{ goOrder }}" style="display:inline-block;cursor:pointer;padding:17px 36px;border-radius:999px;background:linear-gradient(135deg,#F0D68A,#D4AF37);color:#120A2E;font-weight:600">Create My Child's Figurine</div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ══════════ ORDER ══════════ -->
+  <sc-if value="{{ isOrder }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:960px;margin:0 auto;padding:80px 24px 110px">
+    <div style="text-align:center;margin-bottom:52px">
+      <div style="font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#D4AF37;margin-bottom:14px">Order / Custom request</div>
+      <h1 style="font-family:Marcellus,serif;font-size:52px;margin:0 0 16px">Start your child's figurine</h1>
+      <p style="font-size:17px;color:rgba(247,243,235,.6);font-weight:300;max-width:600px;margin:0 auto">Tell us a little about your child. We will reply within one working day with pricing and next steps.</p>
+    </div>
+    <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:64px 40px;border-radius:22px;border:1px solid rgba(212,175,55,.4);background:linear-gradient(160deg,rgba(36,18,77,.9),rgba(18,10,46,.9));text-align:center">
+        <div style="font-size:34px;color:#D4AF37;margin-bottom:18px">✦</div>
+        <h2 style="font-family:Marcellus,serif;font-size:34px;margin:0 0 14px">Request received</h2>
+        <p style="font-size:16.5px;color:rgba(247,243,235,.65);font-weight:300;margin:0">Thank you. Our design team will be in touch shortly on WhatsApp and email with pricing, timelines and the next steps.</p>
+      </div>
+    </sc-if>
+    <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+    <form onSubmit="{{ onSubmit }}" style="padding:44px;border-radius:22px;border:1px solid rgba(212,175,55,.25);background:linear-gradient(160deg,rgba(36,18,77,.75),rgba(18,10,46,.75))">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+        <label style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,235,.55)">Parent name *</span>
+          <input name="parent" required="" style="padding:14px 16px;border-radius:10px;border:1px solid rgba(212,175,55,.28);background:rgba(18,10,46,.8);color:#F7F3EB;font-size:15px" />
+        </label>
+        <label style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,235,.55)">Child name *</span>
+          <input name="child" required="" style="padding:14px 16px;border-radius:10px;border:1px solid rgba(212,175,55,.28);background:rgba(18,10,46,.8);color:#F7F3EB;font-size:15px" />
+        </label>
+        <label style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,235,.55)">Email *</span>
+          <input name="email" type="email" required="" style="padding:14px 16px;border-radius:10px;border:1px solid rgba(212,175,55,.28);background:rgba(18,10,46,.8);color:#F7F3EB;font-size:15px" />
+        </label>
+        <label style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,235,.55)">Mobile number *</span>
+          <input name="mobile" type="tel" required="" pattern="[0-9+ ]{10,15}" style="padding:14px 16px;border-radius:10px;border:1px solid rgba(212,175,55,.28);background:rgba(18,10,46,.8);color:#F7F3EB;font-size:15px" />
+        </label>
+        <label style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,235,.55)">City *</span>
+          <input name="city" required="" style="padding:14px 16px;border-radius:10px;border:1px solid rgba(212,175,55,.28);background:rgba(18,10,46,.8);color:#F7F3EB;font-size:15px" />
+        </label>
+      </div>
+      <label style="display:flex;flex-direction:column;gap:9px;margin-top:22px">
+        <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,235,.55)">Custom requirements</span>
+        <textarea name="notes" rows="4" style="padding:14px 16px;border-radius:10px;border:1px solid rgba(212,175,55,.28);background:rgba(18,10,46,.8);color:#F7F3EB;font-size:15px;resize:vertical"></textarea>
+      </label>
+      <sc-if value="{{ formError }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:18px;font-size:14px;color:#F0D68A">Please complete all required fields before submitting.</div>
+      </sc-if>
+      <button type="submit" style="margin-top:30px;width:100%;padding:17px;border:none;border-radius:999px;background:linear-gradient(135deg,#F0D68A,#D4AF37);color:#120A2E;font-weight:600;font-size:16px;cursor:pointer">Send Request</button>
+    </form>
+    </sc-if>
+  </div>
+  </sc-if>
+
+
+  </main>
+
+  <footer style="position:relative;z-index:1;border-top:1px solid rgba(212,175,55,.2);background:rgba(18,10,46,.9)">
+    <div style="max-width:1240px;margin:0 auto;padding:56px 24px 44px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px">
+      <div>
+        <img src="img/logo.png" alt="Osher" style="height:88px;width:auto;display:block;margin-bottom:18px" />
+        <p style="font-size:14.5px;line-height:1.7;color:rgba(247,243,235,.5);font-weight:300;max-width:340px;margin:0">Custom figurines made from your child's own photograph — designed, 3D printed and painted by hand in India.</p>
+      </div>
+      <div>
+        <div style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#D4AF37;margin-bottom:18px">Explore</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="8">
+            <div onClick="{{ item.onClick }}" style="cursor:pointer;font-size:14.5px;color:rgba(247,243,235,.6)" style-hover="color:#F0D68A">{{ item.label }}</div>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#D4AF37;margin-bottom:18px">Get in touch</div>
+        <div style="font-size:14.5px;color:rgba(247,243,235,.6);line-height:2">+91 6300053973<br /><a href="https://wa.me/916300053973" target="_blank" rel="noopener">WhatsApp us</a></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(212,175,55,.14);padding:20px 24px;text-align:center;font-size:12.5px;color:rgba(247,243,235,.35);letter-spacing:.06em">© 2026 Osher. Where Little Joys Inspire Big Dreams.</div>
+  </footer>
+
+  <a href="https://wa.me/916300053973" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp" style="position:fixed;right:22px;bottom:24px;z-index:55;display:flex;align-items:center;gap:10px;padding:12px 20px 12px 14px;border-radius:999px;background:#25D366;color:#FFFFFF;font-size:14.5px;font-weight:500;letter-spacing:.02em;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.45)" style-hover="background:#1EBE5B;color:#FFFFFF">
+    <svg viewBox="0 0 32 32" width="24" height="24" fill="#FFFFFF" aria-hidden="true"><path d="M16.02 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.46 1.72 6.4L3.2 28.8l6.56-1.71a12.74 12.74 0 0 0 6.26 1.63h.01c7.05 0 12.79-5.74 12.79-12.8 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 0 0-9.05-3.67Zm0 23.06h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.02 1.05 1.07-3.92-.25-.4a10.57 10.57 0 0 1-1.62-5.65c0-5.86 4.77-10.63 10.63-10.63 2.84 0 5.51 1.11 7.51 3.12a10.56 10.56 0 0 1 3.11 7.52c0 5.86-4.77 10.62-10.63 10.62Zm5.83-7.96c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.35-.26-.62-.52-.54-.71-.55l-.61-.01c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65s1.14 3.08 1.3 3.29c.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.15-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37Z"/></svg>
+    <span>Chat with us</span>
+  </a>
+
+  <sc-if value="{{ lightboxOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeLightbox }}" style="position:fixed;inset:0;z-index:80;background:rgba(9,5,24,.92);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:40px">
+      <div style="max-width:520px;width:100%">
+        <div style="border-radius:18px;border:1px solid rgba(212,175,55,.3);background:radial-gradient(circle at 50% 40%,rgba(212,175,55,.12),rgba(18,10,46,.95));overflow:hidden">
+          <img src="{{ lightbox.after }}" alt="{{ lightbox.title }}" style="width:100%;max-height:72vh;object-fit:contain;display:block" />
+        </div>
+        <div style="text-align:center;margin-top:24px">
+          <div style="font-family:Marcellus,serif;font-size:26px">{{ lightbox.title }}</div>
+          <div style="font-size:13px;color:rgba(247,243,235,.45);margin-top:8px">Click anywhere to close</div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  state = { page: 'home', step: 0, themeFilter: 'All', galleryFilter: 'All', lightbox: null, submitted: false, formError: false };
+
+  go(page) { this.setState({ page }); window.scrollTo(0, 0); }
+
+  renderVals() {
+    const s = this.state;
+    const gold = '#D4AF37';
+    const pages = [
+      ['home', 'Home'], ['services', 'Services'], ['process', 'Our Process'], ['gallery', 'Gallery'],
+      ['testimonials', 'Testimonials'], ['about', 'About']
+    ];
+
+    const steps = [
+      { n: '01', title: 'Share a Photo on WhatsApp', body: 'Send us your child\u2019s photo on WhatsApp. Any pose, any background.', long: 'Message us on WhatsApp and send a photo of your child. There is no need for a studio shoot — an everyday photo in natural light gives our designers everything they need to capture a likeness.', tags: ['Send on WhatsApp', 'Any pose', 'Any background'], img: 'img/step1.png' },
+      { n: '02', title: 'Tell Us Your Theme', body: 'Superhero, princess, cricketer, fantasy or a character of your own.', long: 'Tell us the persona your child dreams about. Superhero, princess, cricketer, fantasy hero — or describe a character entirely of your own and we will design it from scratch.', tags: ['Superhero', 'Princess', 'Cricketer', 'Fantasy', 'Custom Character'], img: 'img/step2.png' },
+      { n: '03', title: 'Approve the Design', body: 'We share a 3D preview on WhatsApp. Nothing prints until you say yes.', long: 'Our designers build a personalized 3D model and send you a preview on the same WhatsApp chat. Ask for changes to the face, outfit, pose or colours as many times as you need. Nothing goes to print until you approve it.', tags: ['3D preview shared', 'Unlimited revisions', 'You approve before print'], img: 'img/step3.png' },
+      { n: '04', title: '3D Printed, Hand Painted & Delivered', body: 'Printed in fine detail, painted by hand, packed and shipped.', long: 'The approved model is printed in high detail, then painted by hand — every fold, badge and expression. It is carefully packed and delivered to your doorstep anywhere in India.', tags: ['High-detail printing', 'Individually hand painted', 'Protective packaging', 'Pan-India delivery'], img: 'img/step4.png' }
+    ];
+
+    const themes = [
+      { name: 'Superheroes', tag: 'Most loved', blurb: 'Capes, armour and the confident stance every child practises in the mirror.', img: 'img/step4.png' },
+      { name: 'Princesses', tag: 'Most loved', blurb: 'Flowing gowns and delicate detail, painted with a fine brush.', img: 'img/fig-pink.png' },
+      { name: 'Sports Heroes', tag: 'Sports', blurb: 'Cricket whites, jerseys and match-day poses in miniature.', img: 'img/fig-cricketer.png' },
+      { name: 'Fantasy Characters', tag: 'Imagination', blurb: 'Wizards, warriors and creatures from stories they love.', img: 'img/fig-blue.png' },
+      { name: 'Scientists', tag: 'Aspiration', blurb: 'Lab coats and curiosity — for the child who takes things apart.', slot: 'scientist figurine' },
+      { name: 'Artists', tag: 'Aspiration', blurb: 'Palette in hand, mid-brushstroke, exactly as they are at home.', slot: 'artist figurine' },
+      { name: 'Space Explorers', tag: 'Imagination', blurb: 'Suited up for a voyage that starts in the living room.', img: 'img/fig-space.png' },
+      { name: 'Custom Designs', tag: 'Anything', blurb: 'Describe any character at all and our designers will build it.', img: 'img/fig-custom.png' }
+    ].map(t => ({ ...t, img: t.img || '', placeholder: !t.img }));
+    const themeTags = ['All', 'Most loved', 'Sports', 'Imagination', 'Aspiration', 'Anything'];
+
+    const gallery = [
+      { title: 'The Night Guardian', cat: 'Superhero', img: 'img/g-superhero.png' },
+      { title: 'The Golden Warrior', cat: 'Superhero', img: 'img/g-warrior.png' },
+      { title: 'Match Day', cat: 'Sports', img: 'img/g-cricketer.png' },
+      { title: 'The Rose Gown', cat: 'Princess', img: 'img/g-gown.png' },
+      { title: 'The Ice Queen', cat: 'Princess', img: 'img/g-icequeen.png' }
+    ];
+    const galleryCats = ['All', 'Superhero', 'Princess', 'Sports'];
+
+    const reviews = [
+      { name: 'Priya S.', city: 'Bengaluru', quote: 'My son opened the box and went completely silent, then hugged it. The likeness is uncanny — even the little gap in his teeth.' },
+      { name: 'Rahul M.', city: 'Hyderabad', quote: 'We ordered for our daughter\u2019s fifth birthday. The design preview process meant zero surprises, and the finish is far better than we expected.' },
+      { name: 'Anjali K.', city: 'Mumbai', quote: 'It sits on her study table and she introduces it to every guest. Worth every rupee for that alone.' },
+      { name: 'Vikram T.', city: 'Pune', quote: 'The cricket kit detail is remarkable — pads, gloves, even the sticker on the bat. My son now wants one for every season.' },
+      { name: 'Neha R.', city: 'Chennai', quote: 'Communication was excellent throughout. They shared the 3D model twice and adjusted the hair until it was exactly right.' },
+      { name: 'Sandeep G.', city: 'Delhi', quote: 'Gifted this to my nephew and the whole family crowded around it. Packaging was premium and it arrived without a scratch.' }
+    ];
+
+    const chip = (active) => ({
+      border: active ? gold : 'rgba(212,175,55,.3)',
+      bg: active ? 'rgba(212,175,55,.15)' : 'transparent',
+      color: active ? '#F0D68A' : 'rgba(247,243,235,.6)'
+    });
+
+    const stars = '★★★★★';
+    const initialsOf = (name) => name.split(' ').map(p => p[0]).join('').replace(/\./g, '').toUpperCase();
+    const active = steps[s.step];
+
+    return {
+      navItems: pages.map(([key, label]) => ({ key, label, active: s.page === key, onClick: () => this.go(key) })),
+      goHome: () => this.go('home'),
+      goOrder: () => this.go('order'),
+      goGallery: () => this.go('gallery'),
+      isHome: s.page === 'home', isServices: s.page === 'services', isProcess: s.page === 'process', isGallery: s.page === 'gallery',
+      isTestimonials: s.page === 'testimonials', 
+      isAbout: s.page === 'about', isOrder: s.page === 'order',
+
+      servicesPreview: [
+        { title: 'Personalised Child Figurine', body: 'Our signature service. One child, sculpted from your photos and painted by hand.' },
+        { title: 'Character & Theme Figurines', body: 'Superhero, princess, cricketer, astronaut — whoever they dream of being.' },
+        { title: 'Family & Sibling Sets', body: 'Two or more figurines designed together to sit as a matching group.' }
+      ].map(s => ({ ...s, onClick: () => this.go('services') })),
+      goServices: () => this.go('services'),
+      services: [
+        { title: 'Personalised Child Figurine', body: 'Our signature service. One child, sculpted from your photos and painted by hand.', points: ['Designed from a photo', '3D preview before printing', 'Roughly 5–9 inches tall'] },
+        { title: 'Character & Theme Figurines', body: 'Superhero, princess, cricketer, astronaut — whoever they dream of being.', points: ['Costume and pose of your choice', 'Original characters welcome', 'Custom colours and details'] },
+        { title: 'Family & Sibling Sets', body: 'Two or more figurines designed together to sit as a matching group.', points: ['Shared base or separate stands', 'Consistent scale and finish', 'Popular for anniversaries'] },
+        { title: 'Milestone & Gift Commissions', body: 'Made for the occasions a card cannot carry on its own.', points: ['Birthdays and naming ceremonies', 'First tournament or recital', 'Gift packaging included'] },
+        { title: 'Custom Design Requests', body: 'Describe anything at all and our designers will build it from scratch.', points: ['Pets, mascots and cartoons', 'Scene bases and props', 'Engraved name plates'] },
+        { title: 'Bulk & Event Orders', body: 'Larger runs for schools, clubs, teams and corporate gifting.', points: ['Team and class sets', 'Volume pricing on request', 'Coordinated delivery timelines'] }
+      ],
+      whyCards: [
+        { title: 'Made from their story', note: 'Inspired by your child\u2019s photo, personality and imagination.' },
+        { title: 'Designed just for them', note: 'Custom-designed to capture what makes them unique.' },
+        { title: 'Crafted in fine detail', note: 'High-resolution 3D printing captures every little detail.' },
+        { title: 'Hand-finished with care', note: 'Smoothed, painted and finished by hand, one piece at a time.' },
+        { title: 'Imagination, made real', note: 'Their favourite dream, brought to life as a figurine.' },
+        { title: 'Truly one of a kind', note: 'No two figurines are alike\u2014just like no two children.' },
+        { title: 'Made for meaningful moments', note: 'Perfect for birthdays, milestones and special achievements.' },
+        { title: 'A memory that lasts', note: 'A piece of childhood to treasure for years to come.' }
+      ].map((c, i) => ({ ...c, n: String(i + 1).padStart(2, '0') })),
+      steps: steps.map((st, i) => ({ ...st, onClick: () => { this.setState({ step: i }); this.go('process'); } })),
+      stepBars: steps.map((st, i) => ({
+        label: st.title,
+        fill: i <= s.step ? gold : 'rgba(212,175,55,.2)',
+        color: i === s.step ? '#F0D68A' : 'rgba(247,243,235,.45)',
+        onClick: () => this.setState({ step: i })
+      })),
+      active,
+      prevStep: () => this.setState({ step: Math.max(0, s.step - 1) }),
+      nextStep: () => this.setState({ step: Math.min(steps.length - 1, s.step + 1) }),
+
+      galleryFilters: galleryCats.map(c => ({ label: c, ...chip(s.galleryFilter === c), onClick: () => this.setState({ galleryFilter: c }) })),
+      visibleGallery: gallery.filter(g => s.galleryFilter === 'All' || g.cat === s.galleryFilter).map(g => ({
+        ...g,
+        onClick: () => this.setState({ lightbox: { title: g.title, after: g.img } })
+      })),
+      lightboxOpen: !!s.lightbox,
+      lightbox: s.lightbox || { title: '', after: '' },
+      closeLightbox: () => this.setState({ lightbox: null }),
+
+      reviews: reviews.map(r => ({ ...r, stars, initials: initialsOf(r.name) })),
+      featuredReviews: reviews.slice(0, 3).map(r => ({ ...r, stars, initials: initialsOf(r.name) })),
+
+      aboutStats: [
+        { figure: 'Hand-painted', label: 'Every single figurine' },
+        { figure: 'One-of-a-kind', label: 'No two are alike' },
+        { figure: 'Pan-India', label: 'Safely delivered' }
+      ],
+      values: [
+        { title: 'Childhood, celebrated', body: 'We design for the version of your child that only exists right now.' },
+        { title: 'Craft over volume', body: 'Small batches, painted by people, checked by hand before packing.' },
+        { title: 'Gifting with feeling', body: 'Made for the moments a card cannot carry on its own.' },
+        { title: 'Family memory', body: 'A treasure that keeps its meaning long after the birthday passes.' }
+      ],
+
+      submitted: s.submitted,
+      notSubmitted: !s.submitted,
+      formError: s.formError,
+      onSubmit: (e) => {
+        e.preventDefault();
+        const f = e.target;
+        const ok = ['parent', 'child', 'email', 'mobile', 'city'].every(n => f.elements[n] && f.elements[n].value.trim());
+        if (!ok) { this.setState({ formError: true }); return; }
+        this.setState({ submitted: true, formError: false });
+        window.scrollTo(0, 0);
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
